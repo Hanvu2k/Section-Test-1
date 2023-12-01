@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #374639;
+  --secondary: #3f514b;
+  --third: #72776c;
+  --line: #ecedec;
+  --fourth: #4e5c58;
+}
+
+/* section */
+section {
+  width: 1917px;
+  height: 917px;
+  padding: 70px 194px 30px;
+  color: var(--secondary);
+}
+
+.section-container {
+  display: grid;
+  gap: 40px;
+}
+
+/*section head  */
+.section-container .section-head__content {
+  width: 519px;
+  display: grid;
+  gap: 20px;
+}
+
+.section-head__content .section-title h3 {
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--primary);
+}
+
+.section-head__content .section-description {
+  font-size: 19px;
+  line-height: 27px;
+}
+
+/*product card  */
+.product-card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 23px;
+}
+
+.product-card__container .product-card__content {
+  width: 365px;
+  display: grid;
+  gap: 18px;
+}
+
+/* product card img */
+.product-card__content .product-card__img {
+  width: 365px;
+  height: 266px;
+}
+
+.product-card__content .product-card__img .product-card__img-link {
+  height: 100%;
+  width: 100%;
+}
+
+/* product card detail */
+.product-card__detail {
+  display: grid;
+  gap: 20px;
+  width: 360px;
+}
+
+.product-card__detail .content-info {
+  display: grid;
+  gap: 6px;
+  width: 308px;
+}
+
+.content-info .content-detail {
+  display: grid;
+  gap: 8px;
+}
+
+.content-info .content-detail .content-title {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.content-info .content-detail .content-description {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.content-info .content-price {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.content-info .content-price .origin-price {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: var(--third);
+}
+
+.content-info .content-price .promotional-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card__detail .schedule-detail {
+}
+
+.schedule-detail .schedule-detail__item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 10px 0;
+}
+
+.schedule-detail__item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.schedule-detail .schedule-detail__item .timeline {
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 8px;
+  color: var(--third);
+}
+
+.schedule-detail .schedule-detail__item .activity {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--fourth);
+}
